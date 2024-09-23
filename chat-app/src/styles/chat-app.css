@@ -151,3 +151,42 @@ body {
   color: blue;
   cursor: pointer;
 }
+.logout-button {
+  background-color: #dc3545; /* Red for logout */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.emoji-container {
+  position: relative;
+}
+
+.emoji-picker {
+  display: flex;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 10;
+}
+
+.emoji {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.reaction {
+  margin-left: 10px;
+}
+.theme-button {
+  background-color: #ffc107;
+}
+
+.theme-button:hover {
+  background-color: #ffca2b;
+}

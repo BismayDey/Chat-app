@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       {user ? (
-        <ChatApp user={user} username={username} />
+        <ChatApp user={user} username={username} setUser={setUser} />
       ) : showSignup ? (
         <Signup setUser={setUser} setUsername={setUsername} />
       ) : (

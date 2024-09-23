@@ -31,6 +31,8 @@ const Signup = ({ setUser, setUsername }) => {
       <form onSubmit={handleSignup}>
         <input
           type="text"
+          id="signup-username"
+          name="signup-username"
           value={username}
           onChange={(e) => setUsernameInput(e.target.value)}
           placeholder="Username"
@@ -39,6 +41,8 @@ const Signup = ({ setUser, setUsername }) => {
         />
         <input
           type="email"
+          id="signup-email"
+          name="signup-email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
@@ -47,6 +51,8 @@ const Signup = ({ setUser, setUsername }) => {
         />
         <input
           type="password"
+          id="signup-password"
+          name="signup-password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
