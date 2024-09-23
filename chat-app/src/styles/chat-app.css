@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #e5ddd5; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue for login button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  max-width: 500px; /* Restrict width for mobile friendliness */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white; /* White background for chat area */
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  background: #f9f9f9; /* Light gray background for messages */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Gap between messages */
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  position: relative; /* For pseudo elements */
+}
+
+.message.user {
+  align-self: flex-end; /* Align user's messages to the right */
+  background-color: #dcf8c6; /* Light green for user messages */
+}
+
+.message.other {
+  align-self: flex-start; /* Align other messages to the left */
+  background-color: #fff; /* White for other messages */
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  color: #999; /* Gray color */
+  padding: 5px 10px;
+}
+
+.dots {
+  display: flex;
+  margin-left: 5px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #999;
+  margin: 0 2px;
+  animation: blink 1s infinite alternate;
+}
+
+.input-form {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light input background */
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px; /* Rounded input */
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: #fff; /* White input */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff; /* Highlight input on focus */
+}
+
+.send-button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Blue for send button */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+}
+
+.toggle {
+  color: blue;
+  cursor: pointer;
+}
